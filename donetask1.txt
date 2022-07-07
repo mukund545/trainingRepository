@@ -1,0 +1,32 @@
+show databases;
+
+create database library;
+
+use library;
+
+create table book(book_id integer,book_name varchar(50) not null,
+				  book_author_name varchar(50) not null,  book_publication_year integer not null);
+                  
+ alter table book add primary key(book_id);      
+ 
+ alter table book rename to books;
+ 
+ insert into books value(1,"abc","def",1955),
+                         (2,"ghi","jkl",1960),
+                         (3,"mno","pqr",1985),
+                         (4,"stu","vwx",1999);
+                         
+  select * from books;
+  
+  desc books;
+  
+  update  books 
+  set book_name="aei"
+  where book_id=2;
+  
+  delete from books
+  where book_id=3;
+  
+  drop table books;
+  
+  
