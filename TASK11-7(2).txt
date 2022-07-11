@@ -1,0 +1,63 @@
+package com.example.demo.entity;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import org.springframework.stereotype.Component;
+
+@Component
+public class InternetConnection {
+
+	private int id;
+	private String connectionName;
+	private String connectionProvider;
+	
+
+	public int getId() {
+		return id;
+	}
+
+
+	public void setId(int id) {
+		this.id = id;
+	}
+
+
+	public String getConnectionName() {
+		return connectionName;
+	}
+
+
+	public void setConnectionName(String connectionName) {
+		this.connectionName = connectionName;
+	}
+
+
+	public String getConnectionProvider() {
+		return connectionProvider;
+	}
+
+
+	public void setConnectionProvider(String connectionProvider) {
+		this.connectionProvider = connectionProvider;
+	}
+	
+	public void getDetail() {
+		
+		this.id=1;
+		this.connectionName="airtel";
+		this.connectionProvider="airtel india";
+		
+		System.out.println(id+" "+connectionName+" "+connectionProvider);
+	
+	}
+	
+	
+	
+	
+
+	
+	
+	
+	
+}
