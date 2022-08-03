@@ -29,7 +29,7 @@ public class MobileController {
 	@GetMapping("/fetch")
 	public 	Object getDetails(@RequestParam(value = "pageNumber",defaultValue = "0",required = false)int pageNumber,
             @RequestParam(value = "pageSize",defaultValue ="2",required = false)int pageSize,
-            @RequestParam(value = "sortBy",defaultValue ="managementId",required = false)String sortBy)
+            @RequestParam(value = "sortBy",defaultValue ="mobileId",required = false)String sortBy)
 	{
 		return mobileService.fetchMobile(pageNumber,pageSize,sortBy);
 	}
